@@ -1,0 +1,46 @@
+body {
+    background     : linear-gradient(180deg, #8b02db 0%, #8dd0f5 100%);
+    justify-content: start;
+    align-items    : center;
+    display        : flex;
+    flex-direction : column;
+    min-height     : 100vh;
+    width          : 100vw;
+}
+
+section {
+    margin-top  : 30px;
+    margin-left : 20px;
+    margin-right: 20px;
+}
+
+aside {
+    margin-top  : 20px;
+    margin-left : 20px;
+    margin-right: 20px;
+}
+
+ul li {
+    width: auto;
+}
+
+.card {
+    width: 600px;
+}
+
+.formulario {
+    width: auto;
+}
+
+#data-list {
+    width: 100%;
+}
+
+#outputDB {
+    margin-left: 5px;
+}
+
+#linha-horizontal {
+    width : auto;
+    border: thin solid rgba(43, 43, 43, 0.178)
+}

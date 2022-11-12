@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <section>
+        <div class="card">
+            <div class="card-content">
+                <form class="formulario" id="contactForm">
+                    <div class="field nome">
+                        <label class="label">Nome</label>
+                        <input class="input is-primary" type="text" id="inputName" placeholder="Digite o nome...">
+                    </div>
+                    <div class="field telefone">
+                        <label class="label">Telefone</label>
+                        <input class="input is-primary" type="number" id="inputPhone"
+                            placeholder="Digite o telefone...">
+                    </div>
+                    <input class="button is-success is-fullwidth" value="Salvar" type="submit" id="btnSalvar"
+                        name="Salvar" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <div class="card">
+            <div class="card-content">
+                <div>
+
+                </div>
+
+                <div class="buttons actions" style="display: flex; align-items: center; justify-content: center;">
+                    <button class="button is-danger" onclick="deleteDataBase()" >Limpar lista</button>
+                </div>
+
+                <div id="linha-horizontal"></div>
+
+                <div class="lista-contatos">
+                    <strong>Lista de contatos</strong>
+                    <ul id="data-list" style="margin-bottom: 20px;"></ul>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+
+    <footer style="margin-top: 30px; ">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <span>Request result: </span>
+            <span id="outputDB"></span>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
