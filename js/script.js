@@ -62,7 +62,7 @@ const readData = () => {
       deleteButton.className = "delete";
 
       // chama os valores
-      const textItem = `Nome ---> ${cursor.value.name} ---> Telefone: ${cursor.value.phone} `;
+      const textItem = `${cursor.value.id}) Nome ---> ${cursor.value.name} ---> Telefone: ${cursor.value.phone} `;
 
       // creation delete button
       deleteButton.textContent = "Delete";
